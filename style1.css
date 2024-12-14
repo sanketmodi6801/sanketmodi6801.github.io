@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: floralwhite;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #0078d4;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+    color: #0078d4;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #005ea6;
+}
+
+.btn-secondary {
+    display: inline-block;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.btn-secondary:hover {
+    color: #005ea6;
+}
+
+.footer {
+    background-color: #404a42;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #85abcb;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #f05a28;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #f05a28;
+}
+
+
+/* Featured Work Section */
+.featured-work {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.featured-work h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.work-mockups .work-image {
+    width: 49%; /* Ensures images are side by side */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Adds rounded borders */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the images are side by side */
+}
+
+.work-image1:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds shadow */
+}
+
+.work-image2:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds shadow */
+}
+
+.btn-secondary {
+    display: inline-block;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.btn-secondary:hover {
+    color: #005ea6;
+}

@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #272401;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: floralwhite;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #85abcb;
+}
+
+/* Combined Header & Contact Section */
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: #eddbcd;
+  margin-top: 20px; /* Adjust margin */
+  border-bottom: 2px solid #c0b283; /* Clean bottom border */
+}
+
+.header-content {
+  width: 60%;
+  text-align: left;
+}
+
+.header-content h1 {
+  font-family: 'Ramaraja', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  width: 35%;
+  text-align: left;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #404a42;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+  .header-contact {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .header-content, .contact-info {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
+
+/* Sections */
+.section {
+  padding: 2rem 10%;
+}
+
+.section h2 {
+  color: #404a42;
+  border-bottom: 2px solid #c0b283;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.project, .experience, .education {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #192231;
+  margin-bottom: 5px;
+}
+
+p, li {
+  color: #555;
+}
+
+/* Skills */
+.skills {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+
+.download-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Automatically adds margin around the button */
+}
+
+.download-btn {
+  background-color: #404a42;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #192231;
+  transform: scale(1.05);
+}
+
+.download-btn:active {
+  background-color: #85abcb;
+}
+
+.footer {
+  background-color: #404a42;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  color: #85abcb;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #f05a28;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #f05a28;
+}
